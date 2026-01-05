@@ -1,41 +1,181 @@
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
+# Dependencies
 node_modules/
-
-# Expo
 .expo/
-dist/
-web-build/
-expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
 npm-debug.*
+*.tgz
 yarn-debug.*
 yarn-error.*
+package-lock.json
+yarn.lock
 
-# macOS
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Expo
+.expo-shared/
+.expo/
+web-build/
+
+# Android
+android/.gradle
+android/local.properties
+android/.idea/workspace.xml
+android/.idea/navEditor.xml
+android/.idea/assetWizardSettings.xml
+android/.idea/caches/build_file_checksums.ser
+android/.idea/libraries/
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/gradle/wrapper/gradle-wrapper.properties
+android/*.iml
+android/*.hprof
+android/app/build/
+android/build/
+android/key.properties
+android/keystores/
+
+# iOS
+ios/Pods/
+ios/build/
+ios/*.xcodeproj/*
+!ios/*.xcodeproj/project.pbxproj
+!ios/*.xcodeproj/xcshareddata/
+!ios/*.xcodeproj/xcshareddata/xcschemes/
+ios/*.xcworkspace/*
+!ios/*.xcworkspace/contents.xcworkspacedata
+ios/ServiceDefinitions.json
+ios/GoogleService-Info.plist
+ios/Firebase/
+ios/.xcode.env.local
+ios/AppIcon.appiconset/
+ios/Assets.xcassets/
+
+# System files
 .DS_Store
-*.pem
+*.swp
+*.swo
+*~
+Thumbs.db
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 
-# local env files
-.env*.local
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+.classpath
 
-# typescript
+# Build outputs
+dist/
+build/
+.release
+*.apk
+*.aab
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Coverage
+coverage/
+*.lcov
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Firebase
+firebase-debug.log
+firebase-export.json
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Temp files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Metro bundler cache
+.cache/
+metro-cache/
+
+# Babel cache
+.babel-cache/
+
+# ESLint cache
+.eslintcache
+
+# Jest cache
+jest-cache/
+
+# TypeScript cache
 *.tsbuildinfo
 
-# generated native folders
-/ios
-/android
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Expo
+.expo-shared/
+.expo/
+web-build/
+
+# React Native
+.rn-cache/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Sensitive credentials
+google-services.json
+GoogleService-Info.plist
+keys.json
+secrets.json
+credentials.json
+firebase-key.json
+service-account.json
+
+# Custom
+*.p12
+*.pem
+*.key
+*.cert
