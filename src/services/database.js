@@ -5,7 +5,7 @@ const db = SQLite.openDatabaseSync('football_manager.db');
 
 export const initDatabase = async () => {
   try {
-    // Create tables using execAsync
+   
     await db.execAsync(`
       CREATE TABLE IF NOT EXISTS players (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
